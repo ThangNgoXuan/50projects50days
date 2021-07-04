@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg1 {
+    background-image: url('https://uniquephoto.azureedge.net/resources/uniquephoto/images/blog/2014/12/Ken-Kaminesky.jpg');
+}
+.bg2 {
+    background-image: url('https://www.exploretheworld.world/content/index/Chile_Torres%20del%20Paine_129.jpg');
+}
+.bg3 {
+    background-image: url('https://www.shutterbug.com/images/17/1cb10317.png');
+}
+.bg4 {
+    background-image: url('https://www.exploretheworld.world/content/index/Roadtrip%20Day%2016%20-%20Nelson%20Bay_001.jpg');
+}
+.bg5 {
+    background-image: url('http://en.baoninhbinh.org.vn/DATA/ARTICLES/2021/4/27/photo-tour-and-contest-to-explore-trang-an-world-natural-and-b907f.jpg');
+}
+
+
+
+
+.panel {
+    height: 80vh;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+}
+
+@media (max-width : 480px) {
+    .container {
+        width: 100%;
+    }
+
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(4) {
+        display: none;
+    }
+}
