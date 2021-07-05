@@ -62,7 +62,7 @@ nav::before {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('img/showcase-bg.png');
+    background-image: url('../img/showcase-bg.png');
     background-color: rgba(20, 2, 39, 0.9);
     background-position: center;
     background-repeat: no-repeat;
